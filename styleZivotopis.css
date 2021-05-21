@@ -1,0 +1,150 @@
+body {
+    
+
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background-color: #293241;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#particles-js {
+    position: absolute;
+    background-color: #293241;
+     height: 100%;
+     width: 100%;
+    z-index: 0;
+    height: 100vh;
+ }
+ .topnav {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    background-color: #EE6C4D;
+
+ }
+ .active i {
+     color: #E0FBFC;
+ }
+ a {
+    text-decoration: none;
+    background-color: #EE6C4D;
+ }
+ i {
+    text-decoration: none;
+    padding: 15px;
+   color: #98C1D9;
+    background-color: #EE6C4D;
+    
+    width: 60px;
+ }
+ .container {
+    
+    
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 500px;
+    
+ }
+ main {
+     z-index: 3;
+ }
+ .info {
+    
+    margin-right: 25px;
+    width: 100%;
+    background-color: #E0FBFC;
+    color: #293241;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 1.5em;
+
+    row-gap: 2em;
+
+    display: flex;
+    flex-direction: column;
+
+
+ }
+ .info > .person {
+    row-gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+ }
+ .info > .person > h2 {
+   text-decoration: underline;
+   font-weight: bold;
+
+ }
+ .info > .aboutperson > h3 {
+    text-decoration: underline;
+    font-weight: bold;
+ }
+ .info > .aboutperson {
+    row-gap: 0.5em;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+   }
+ h1 {
+     font-size: 2em;
+     font-weight: bold;
+     align-self: center;
+ }
+ .about {
+    margin-left: 25px;
+    width: 100%;
+    background-color: #E0FBFC;
+    color: #293241;
+    padding: 20px;
+    border-radius: 25px;
+
+    
+   
+
+ }
+ .about > .hobby > article {
+    
+    font-size: 1.5em;
+    
+ }
+ .about > .hobby > h2 {
+    font-weight: bold;
+
+    font-size: 2em;
+    align-self: center;
+ }
+ .about > .hobby > p {
+    font-weight: bold;
+ }
+ .about > .hobby {
+    display: flex;
+    flex-direction: column;
+   
+    row-gap: 0.5em;
+    font-size: 1.2em;
+
+ }
+
+ @media only screen and (max-width: 1167px) {
+   i {width: 30px;}
+    body {height: 100%; overflow: visible;}
+   .container {margin-top: 350px;
+      flex-direction: column;}
+   .about {margin-left: 0;
+   margin-top: 30px;}
+   .info {margin-right: 0;}
+ }

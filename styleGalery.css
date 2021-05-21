@@ -1,0 +1,177 @@
+body {
+   
+
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background-color: #293241;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.topnav {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    background-color: #EE6C4D;
+
+ }
+ .active i {
+    color: #E0FBFC;
+}
+a {
+   text-decoration: none;
+   background-color: #EE6C4D;
+}
+i {
+   text-decoration: none;
+   padding: 15px;
+   color: #98C1D9;
+   background-color: #EE6C4D;
+   
+   width: 60px;
+}
+#particles-js {
+    position: absolute;
+    background-color: #293241;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    height: 100vh;
+ }
+h1 {
+    
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
+
+    text-align: center;
+    background:#4DCFEE ;
+    width: fit-content;
+    border-radius: 15px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* z důvodu mé nabouchanosti jsem víc wide!  */
+
+.slider {
+    margin-top: 10px;
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+.slide img {
+    width: 700px;
+    height: 500px;
+}
+
+.manual-nav {
+    position: absolute;
+    width: 700px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manualbtn {
+    border: 2.5px solid #4DCFEE;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+.manualbtn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manualbtn:hover {
+    background-color: #4DCFEE;
+}
+
+#radio1:checked ~ .jedna{
+    margin-left: 0px;
+}
+
+#radio2:checked ~ .jedna{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .jedna{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .jedna{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .jedna{
+    margin-left: -80%;
+}
+
+
+.auto-nav{
+    position: absolute;
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.auto-nav div {
+    border: 2.5px solid #4DCFEE;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 1s;
+}
+.auto-nav div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .auto-nav .autobtn1 {
+    background-color: #4DCFEE ;
+}
+#radio2:checked ~ .auto-nav .autobtn2 {
+    background-color: #4DCFEE ;
+}
+#radio3:checked ~ .auto-nav .autobtn3 {
+    background-color: #4DCFEE ;
+}
+#radio4:checked ~ .auto-nav .autobtn4 {
+    background-color: #4DCFEE ;
+}
+#radio5:checked ~ .auto-nav .autobtn5 {
+    background-color: #4DCFEE ;
+}
+
+@media only screen and (max-width: 650px) {
+    i {width: 30px;}
+     body {height: 100%; overflow: visible;}
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://api.cajthaml.eu/upload/reset_595b8cd7ad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="styleGalery.css">
+    <title>Galerie | Jan Havel</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <div class="topnav">
+                <a href="index.html"><i class="fas fa-house-user"></i></a>
+                <a href="zivotopis.html"><i class="fas fa-file-alt"></i></a>
+                <a href="discord.html"><i class="fab fa-discord"></i></a>
+                <a href="galery.html" class="active"><i class="fas fa-images"></i></a>
+                <a href="https://www.instagram.com/jan_havel.xd/"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://open.spotify.com/user/mex007dpxtxmqa36t53mrd1nf?si=vGvCOsk4RISK4kxUW_9DUg"><i
+                        class="fab fa-spotify"></i></a></a>
+                <a href="mailto:jan.havelb@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Moje skvělé fotky</h1>
+
+
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide jedna">
+                    <img src="ja-venku.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="ja-zbran.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="ja-naked.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="ja-skola.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="ja-volejbal.jpg" alt="">
+                </div>
+
+                <div class="auto-nav">
+                    <div class="autobtn1"></div>
+                    <div class="autobtn2"></div>
+                    <div class="autobtn3"></div>
+                    <div class="autobtn4"></div>
+                    <div class="autobtn5"></div>
+                </div>
+
+
+            </div>
+
+            <div class="manual-nav">
+                <label for="radio1" class="manualbtn"></label>
+                <label for="radio2" class="manualbtn"></label>
+                <label for="radio3" class="manualbtn"></label>
+                <label for="radio4" class="manualbtn"></label>
+                <label for="radio5" class="manualbtn"></label>
+
+            </div>
+        </div>
+
+
+    </main>
+    <script>    
+    // jelikož mi z nějakýho důvodu nejde spustit sama ta slideshow když//
+    // to mám v samostatným souboru tak to mám i tady//
+    var cislo = 1;
+        setInterval(() => {
+            document.getElementById('radio' + cislo).checked = true;
+            cislo++;
+            if (cislo > 5) {
+                cislo = 1
+            }
+        }, 4000);
+    </script>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
